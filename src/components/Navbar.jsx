@@ -24,7 +24,7 @@ export default function Navbar() {
       <nav className="navbar">
         {/* LOGO */}
         <Link to="/">
-          <div className="navbar__logo-titulo"><img src="Logo.png" alt="" /></div>
+          <div className="navbar__logo-titulo"><img src="/Logo.png" alt="" /></div>
         </Link>
 
         {/* LINKS */}
