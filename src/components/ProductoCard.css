@@ -1,0 +1,78 @@
+/* ── PRODUCTO CARD ── */
+.producto-card {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.producto-card:hover {
+  border-color: #fff;
+  transform: translateY(-4px);
+}
+
+.producto-card__imagen {
+  background: #1a1a1a;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+}
+
+.producto-card__info {
+  padding: 16px;
+}
+
+.producto-card__categoria {
+  color: #666;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.producto-card__nombre {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.producto-card__desc {
+  color: #555;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.producto-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.producto-card__precio {
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.producto-card__btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  transition: background 0.15s;
+}
+
+.producto-card__btn:hover {
+  background: #e0e0e0;
+}

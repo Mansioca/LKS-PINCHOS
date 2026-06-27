@@ -1,0 +1,98 @@
+/* ── TIENDA ── */
+.tienda {
+  background: #000;
+  min-height: calc(100vh - 100px);
+  padding: 40px 80px;
+}
+
+.tienda__titulo {
+  color: #fff;
+  font-weight: 900;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.tienda__cantidad {
+  color: #555;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 32px;
+}
+
+.tienda__filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tienda__categorias {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tienda__cat-btn {
+  background: transparent;
+  color: #666;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 7px 16px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.15s;
+}
+
+.tienda__cat-btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.tienda__cat-btn--activo {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.tienda__busqueda {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+  min-width: 200px;
+  transition: border-color 0.15s;
+}
+
+.tienda__busqueda:focus {
+  border-color: #555;
+}
+
+.tienda__grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.tienda__estado {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.tienda__estado-icono {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.tienda__estado-texto {
+  font-size: 14px;
+  color: #555;
+}

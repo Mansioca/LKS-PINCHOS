@@ -1,0 +1,147 @@
+/* ── HOME ── */
+.home {
+  background: #000;
+  min-height: calc(100px - 100px);
+}
+
+/* HERO */
+.hero {
+  background:black;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__fondo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 55%;
+  background: radial-gradient(ellipse at center, #000000 0%, #000 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 220px;
+  opacity: 0.;
+  user-select: none;
+}
+
+.hero__contenido {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+}
+
+.hero__subtitulo {
+  color: #888;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero__titulo {
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero__titulo-outline {
+  -webkit-text-stroke: 2px #fff;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__desc {
+  color: #888;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 380px;
+}
+
+.hero__btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 32px;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.hero__btn:hover {
+  background: #e0e0e0;
+}
+
+.hero__imagen {
+  position: absolute;
+  right: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 180px;
+  z-index: 1;
+  filter: drop-shadow(0 0 60px rgba(255,255,255,0.1));
+}
+
+/* CATEGORÍAS */
+.categorias {
+  padding: 60px 80px;
+}
+
+.categorias__titulo {
+  color: #fff;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.categorias__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.categorias__card {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  border-radius: 8px;
+  padding: 32px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.categorias__card:hover {
+  border-color: #fff;
+  background: #1a1a1a;
+}
+
+.categorias__card-icono {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.categorias__card-nombre {
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

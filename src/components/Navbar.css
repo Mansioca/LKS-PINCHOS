@@ -1,0 +1,124 @@
+/* ── NAVBAR ── */
+.navbar {
+  background: #000;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.navbar__logo-titulo {
+  color: #fff;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.navbar__logo-subtitulo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 3px;
+  border-top: 2px solid #fff;
+  padding-top: 2px;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar__link {
+  color: #ccc;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.15s;
+}
+
+.navbar__link:hover {
+  color: #fff;
+}
+
+.navbar__iconos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar__icon-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+}
+
+.navbar__carrito-wrapper {
+  position: relative;
+}
+
+.navbar__carrito-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__busqueda-form {
+  display: flex;
+  gap: 8px;
+}
+
+.navbar__busqueda-input {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+}
+
+/* ── BARRA BENEFICIOS ── */
+.beneficios {
+  background: #464646;
+  border-bottom: 1px solid #1a1a1a;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 10px 40px;
+}
+
+.beneficios__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.beneficios__icono {
+  font-size: 16px;
+}
+
+.beneficios__texto {
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
