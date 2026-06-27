@@ -20,8 +20,12 @@
   align-items: center;
   justify-content: center;
   font-size: 72px;
-}
 
+}
+  .producto-card__imagen img {
+  width: 180px;
+  object-fit: cover;
+}
 .producto-card__info {
   padding: 16px;
 }

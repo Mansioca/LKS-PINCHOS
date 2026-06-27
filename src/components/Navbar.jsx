@@ -24,8 +24,7 @@ export default function Navbar() {
       <nav className="navbar">
         {/* LOGO */}
         <Link to="/">
-          <div className="navbar__logo-titulo">MUNDIAL</div>
-          <div className="navbar__logo-subtitulo">══ SHOP</div>
+          <div className="navbar__logo-titulo"><img src="Logo.png" alt="" /></div>
         </Link>
 
         {/* LINKS */}

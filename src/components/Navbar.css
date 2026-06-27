@@ -1,7 +1,7 @@
 /* ── NAVBAR ── */
 .navbar {
   background: #000;
-  padding: 0 40px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,21 +12,8 @@
   border-bottom: 1px solid #1a1a1a;
 }
 
-.navbar__logo-titulo {
-  color: #fff;
-  font-weight: 900;
-  font-size: 22px;
-  letter-spacing: -1px;
-  line-height: 1;
-}
-
-.navbar__logo-subtitulo {
-  color: #fff;
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: 3px;
-  border-top: 2px solid #fff;
-  padding-top: 2px;
+.navbar__logo-titulo img{
+  width:  90px;
 }
 
 .navbar__links {

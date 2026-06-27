@@ -4,7 +4,7 @@ import "./Detalle.css";
 
 // ── Reemplazá con fetch(`http://localhost:3001/api/productos/${id}`) cuando tengas MySQL ──
 const PRODUCTOS_MOCK = [
-  { id: "1",  nombre: "Camiseta Argentina", categoria: "Camisetas", precio: 8500,  img: "🇦🇷", desc: "Edición especial Mundial 2026. Talle S al XXL." },
+  { id: "1",  nombre: "Camiseta Argentina", categoria: "Camisetas", precio: 8500,  img: "/CAM-ARG.jpg", desc: "Edición especial Mundial 2026. Talle S al XXL." },
   { id: "2",  nombre: "Camiseta Brasil",    categoria: "Camisetas", precio: 8500,  img: "🇧🇷", desc: "Réplica oficial con tecnología DryFit." },
   { id: "3",  nombre: "Camiseta Francia",   categoria: "Camisetas", precio: 9000,  img: "🇫🇷", desc: "Edición limitada campeones vigentes." },
   { id: "4",  nombre: "Camiseta España",    categoria: "Camisetas", precio: 8500,  img: "🇪🇸", desc: "La Roja — tela transpirable premium." },
@@ -54,7 +54,10 @@ export default function Detalle() {
 
       <div className="detalle__grid">
         {/* IMAGEN */}
-        <div className="detalle__imagen">{producto.img}</div>
+        <div className="detalle__imagen">
+        <img src={producto.img} alt={producto.nombre} />
+        </div>  
+        
 
         {/* INFO */}
         <div>

@@ -37,7 +37,10 @@
   justify-content: center;
   font-size: 140px;
 }
-
+.detalle__imagen img {
+  width: 310px;
+  object-fit: contain;
+}
 .detalle__categoria {
   color: #666;
   font-size: 12px;
