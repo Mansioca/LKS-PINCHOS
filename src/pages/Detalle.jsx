@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./Detalle.css";
 
-// ── Reemplazá con fetch(`http://localhost:3001/api/productos/${id}`) cuando tengas MySQL ──
 const PRODUCTOS_MOCK = [
   { id: "1",  nombre: "Camiseta Argentina", categoria: "Camisetas", precio: 8500,  img: "/CAM-ARG.jpg", desc: "Edición especial Mundial 2026. Talle S al XXL." },
   { id: "2",  nombre: "Camiseta Brasil",    categoria: "Camisetas", precio: 8500,  img: "🇧🇷", desc: "Réplica oficial con tecnología DryFit." },
@@ -27,7 +26,6 @@ export default function Detalle() {
   const [agregado, setAgregado]         = useState(false);
 
   useEffect(() => {
-    // ── Reemplazá con: fetch(`http://localhost:3001/api/productos/${id}`) ──
     const encontrado = PRODUCTOS_MOCK.find((p) => p.id === id);
     setProducto(encontrado || null);
   }, [id]);

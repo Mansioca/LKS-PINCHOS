@@ -29,10 +29,6 @@ export default function Tienda() {
   const [searchParams]            = useSearchParams();
 
   useEffect(() => {
-    // ── Cuando tengas MySQL reemplazá esto: ──
-    // fetch("http://localhost:3001/api/productos")
-    //   .then(res => res.json())
-    //   .then(data => { setProductos(data); setCargando(false); });
     setTimeout(() => {
       setProductos(PRODUCTOS_MOCK);
       setCargando(false);
